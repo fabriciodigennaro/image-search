@@ -1,0 +1,23 @@
+.card-footer-data {
+    background-color:#acbacc;
+}
+
+.text-footer {
+    color: #505d6d;
+    font-size: 1.1rem;
+    margin-bottom: -3px;
+    
+}
+.text-footer span {
+    color: #505d6d;
+    font-size: 0.8rem;
+}
+
+.boton-ver-imagen {
+    padding: 10px 50px;
+    margin: 0px;
+}
+
+a {
+    cursor: pointer;
+}
