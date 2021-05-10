@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  pixabay_url: 'https://api-services-middleware.herokuapp.com/pixabay',
 };

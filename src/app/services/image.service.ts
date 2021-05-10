@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -27,10 +28,9 @@ export class ImageService {
     return this.searchTerm$.asObservable();
   }
 
-  getImages(term: string, imagesPerPage: number, actualPage: number): Observable<any> {
-    const KEY = '21502932-3b6127706a242061ed283fa4e';
-    const URL = 'https://pixabay.com/api/?key=' + KEY + '&q=' + term +
-                 '&per_page=' + imagesPerPage + '&page=' + actualPage;
+  getImages(params: string, imagesPerPage: number, actualPage: number): Observable<any> {
+    const URL = environment.pixabay_url + '?q=' + params +
+                 '&images_per_page=' + imagesPerPage + '&page=' + actualPage;
     return this.http.get(URL);
   }
 
