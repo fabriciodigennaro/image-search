@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  pixabay_url: 'https://api-services-middleware.herokuapp.com/pixabay',
+  pixabay_url: 'http://localhost:3000/pixabay',
 };
 
 /*
